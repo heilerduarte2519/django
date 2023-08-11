@@ -81,12 +81,23 @@ WSGI_APPLICATION = 'cognidron.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
+#DATABASES = {
+#    'default': {
+#        'ENGINE': 'django.db.backends.mysql',
+#        'OPTIONS': {
+#            'read_default_file': '/etc/mysql/my.cnf',
+#        }
+#    }
+#}
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'OPTIONS': {
-            'read_default_file': '/etc/mysql/my.cnf',
-        }
+        'NAME': 'cognidroneeg',
+        'USER': 'root',
+        'PASSWORD': 'password',
+        'HOST': 'localhost',  # Puedes cambiarlo si tu base de datos está en otro host
+        'PORT': '3306',       # El puerto por defecto de MySQL
     }
 }
 

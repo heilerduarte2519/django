@@ -14,8 +14,8 @@ isort==5.10.1
 lazy-object-proxy==1.7.1
 mccabe==0.7.0
 mysqlclient==2.1.0
-pgi==0.0.11.2
-pkg_resources==0.0.0
+pip install mysql-connector-python
+pkg_resources
 platformdirs==2.5.2
 pydotplus==2.0.2
 Pygments==2.11.2
